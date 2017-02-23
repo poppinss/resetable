@@ -13,5 +13,16 @@
   "license": "MIT",
   "devDependencies": {
     "japa": "^1.0.1"
-  }
+  },
+  "dependencies": {
+    "japa": "^1.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poppinss/resetable.git"
+  },
+  "bugs": {
+    "url": "https://github.com/poppinss/resetable/issues"
+  },
+  "homepage": "https://github.com/poppinss/resetable#readme"
 }
