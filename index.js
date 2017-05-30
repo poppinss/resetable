@@ -9,10 +9,12 @@
  * file that was distributed with this source code.
 */
 
+const clone = require('clone')
+
 class Resetable {
   constructor (originalValue) {
-    this._originalValue = originalValue || null
-    this.set(originalValue)
+    this.set(clone(originalValue))
+    this._originalValue = typeof (originalValue) === 'object' ? Object.freeze(originalValue) : originalValue
   }
 
   /**

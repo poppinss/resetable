@@ -15,7 +15,7 @@
     "japa": "^1.0.1"
   },
   "dependencies": {
-    "japa": "^1.0.1"
+    "clone": "^2.1.1"
   },
   "repository": {
     "type": "git",
