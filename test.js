@@ -95,3 +95,17 @@ test('work fine with arrays', (assert) => {
   assert.deepEqual(resetable.pull(), [2, 3])
   assert.deepEqual(resetable.get(), [1, 2])
 })
+
+test('set value after reset', (assert) => {
+  const resetable = new Resetable({
+    scope: 'me'
+  })
+  const val = resetable.get()
+  val.scope = 'you'
+  resetable.set(val)
+  resetable.pull()
+  const val1 = resetable.get()
+  val1.scope = 'foo'
+  resetable.set(val1)
+  assert.deepEqual(resetable.get(), { scope: 'foo' })
+})

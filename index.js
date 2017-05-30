@@ -13,8 +13,8 @@ const clone = require('clone')
 
 class Resetable {
   constructor (originalValue) {
+    this._originalValue = originalValue
     this.set(clone(originalValue))
-    this._originalValue = typeof (originalValue) === 'object' ? Object.freeze(originalValue) : originalValue
   }
 
   /**
@@ -48,7 +48,7 @@ class Resetable {
    * @method reset
    */
   reset () {
-    this.set(this._originalValue)
+    this.set(clone(this._originalValue))
   }
 
   /**
