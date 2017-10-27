@@ -1,7 +1,7 @@
 'use strict'
 
 const test = require('japa')
-const Resetable = require('./index')
+const Resetable = require('../src/index')
 
 test('define a resetable with original value', (assert) => {
   const resetable = new Resetable('foo')
