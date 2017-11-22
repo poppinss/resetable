@@ -1,6 +1,6 @@
 {
   "name": "resetable",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A sweet to define temporary values and clear them off conditionally",
   "main": "dist/resetable.cjs.js",
   "module": "dist/resetable.esm.js",
