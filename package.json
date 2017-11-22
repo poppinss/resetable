@@ -6,7 +6,6 @@
   "module": "dist/resetable.esm.js",
   "jsnext:main": "dist/resetable.esm.js",
   "scripts": {
-    "prepublish": "npm run build",
     "build": "rollup -c",
     "prepublish": "npm run build",
     "test": "node test/test.js"
